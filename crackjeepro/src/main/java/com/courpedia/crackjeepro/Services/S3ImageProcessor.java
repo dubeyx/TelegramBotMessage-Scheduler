@@ -20,13 +20,10 @@ public class S3ImageProcessor implements Runnable{
     public static boolean flag=false;
     private static final String BUCKET_NAME = "crackjeepro";
 
-
-
-
-
     private static Bot bot=new Bot();
     private static S3Client s3Client;
-
+    private static final String AWS_ACCESS_KEY = "";
+    private static final String AWS_SECRET_KEY = "";
     public S3ImageProcessor() {
         s3Client = getS3Client();
     }
